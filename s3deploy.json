@@ -224,7 +224,6 @@
     },
     "CodeBuildDeploySite": {
       "Type": "AWS::CodeBuild::Project",
-      "DependsOn": "CodeBuildRole",
       "Properties": {
         "Name": {
           "Fn::Sub": "${AWS::StackName}-DeploySite"
